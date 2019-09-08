@@ -22,34 +22,22 @@ public class MergeSort implements Sort {
         int rightLength = end - mid;
         int[] leftNums = new int[leftLength];
         int[] rightNums = new int[rightLength];
-        for (int i = 0; i < leftLength; i++) {
+        for (int i = 0; i < leftLength; i++)
             leftNums[i] = nums[start + i];
-        }
-        for (int i = 0; i < rightLength; i++) {
+        for (int i = 0; i < rightLength; i++)
             rightNums[i] = nums[mid + i + 1];
-        }
         int leftPointer = 0;
         int rightPointer = 0;
         int numsPointer = start;
         while (leftPointer < leftLength && rightPointer < rightLength) {
-            if (leftNums[leftPointer] < rightNums[rightPointer]) {
-                nums[numsPointer] = leftNums[leftPointer];
-                leftPointer++;
-            } else {
-                nums[numsPointer] = rightNums[rightPointer];
-                rightPointer++;
-            }
-            numsPointer++;
+            if (leftNums[leftPointer] < rightNums[rightPointer])
+                nums[numsPointer++] = leftNums[leftPointer++];
+            else
+                nums[numsPointer++] = rightNums[rightPointer++];
         }
-        while (leftPointer < leftLength) {
-            nums[numsPointer] = leftNums[leftPointer];
-            leftPointer++;
-            numsPointer++;
-        }
-        while (rightPointer < rightLength) {
-            nums[numsPointer] = rightNums[rightPointer];
-            rightPointer++;
-            numsPointer++;
-        }
+        while (leftPointer < leftLength)
+            nums[numsPointer++] = leftNums[leftPointer++];
+        while (rightPointer < rightLength)
+            nums[numsPointer++] = rightNums[rightPointer++];
     }
 }
