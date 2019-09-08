@@ -6,13 +6,23 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
-public class QuickSortTest {
+public class SortTest {
 
     @Test
-    public void sortTest() {
+    public void quickSortTest() {
         Sort quickSort = new QuickSort();
         int[] nums = new int[] { 5, 9, 6, 2, 1, 4 };
         int[] sorted = quickSort.sort(nums.clone());
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(sorted));
+        assertArrayEquals(nums, sorted);
+    }
+
+    @Test
+    public void mergeSortTest() {
+        Sort mergeSort = new MergeSort();
+        int[] nums = new int[] { 5, 9, 6, 2, 1, 4 };
+        int[] sorted = mergeSort.sort(nums.clone());
         Arrays.sort(nums);
         System.out.println(Arrays.toString(sorted));
         assertArrayEquals(nums, sorted);
