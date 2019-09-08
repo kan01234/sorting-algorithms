@@ -1,9 +1,9 @@
 # Merge Sort
 
 |case|time complexity|space complexity|
-|---|---|
-|Worst|O(n log n)|O(n)
-|Average case|O(n log n)|O(n)
+|---|---|---|
+|Worst|O(n log n)|O(n)|
+|Average case|O(n log n)|O(n)|
 
 ## Step
 array:
