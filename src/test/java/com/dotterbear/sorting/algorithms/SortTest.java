@@ -28,4 +28,14 @@ public class SortTest {
         assertArrayEquals(nums, sorted);
     }
 
+    @Test
+    public void heapSortTest() {
+        Sort heapSort = new HeapSort();
+        int[] nums = new int[] { 5, 9, 6, 2, 1, 4 };
+        int[] sorted = heapSort.sort(nums.clone());
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(sorted));
+        assertArrayEquals(nums, sorted);
+    }
+
 }
