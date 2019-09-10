@@ -8,3 +8,5 @@ sorting alogrithms implement by Java.
 [Heap Sort](https://github.com/kan01234/sorting-algorithms/blob/master/md/heap-sort.md)
 
 [Insertion Sort](https://github.com/kan01234/sorting-algorithms/blob/master/md/insertion-sort.md)
+
+[Binary Insertion Sort](https://github.com/kan01234/sorting-algorithms/blob/master/md/binary-insertion-sort.md)
