@@ -38,4 +38,24 @@ public class SortTest {
         assertArrayEquals(nums, sorted);
     }
 
+    @Test
+    public void insertionSortTest() {
+        Sort sort = new InsertionSort();
+        int[] nums = new int[] { 5, 9, 6, 2, 1, 4 };
+        int[] sorted = sort.sort(nums.clone());
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(sorted));
+        assertArrayEquals(nums, sorted);
+    }
+
+    @Test
+    public void BinaryInsertionSortTest() {
+        Sort sort = new BinaryInsertionSort();
+        int[] nums = new int[] { 5, 9, 6, 2, 1, 4 };
+        int[] sorted = sort.sort(nums.clone());
+        // Arrays.sort(nums);
+        System.out.println(Arrays.toString(sorted));
+        // assertArrayEquals(nums, sorted);
+    }
+
 }
