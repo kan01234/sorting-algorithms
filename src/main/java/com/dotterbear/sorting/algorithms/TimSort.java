@@ -1,6 +1,6 @@
 package com.dotterbear.sorting.algorithms;
 
-public class TimSort implements Sort {
+public class Timsort implements Sort {
 
     private static final  int RUN = 3;
 
@@ -10,11 +10,11 @@ public class TimSort implements Sort {
 
     @Override
     public int[] sort(int[] nums) {
-        timSort(nums);
+        timsort(nums);
         return nums;
     }
 
-    public void timSort(int[] nums) {
+    public void timsort(int[] nums) {
         // build run
         for (int i = 0; i < nums.length; i += RUN) {
             binaryInsertionSort.binaryInsertionSort(nums, i, Math.min(i + RUN, nums.length));

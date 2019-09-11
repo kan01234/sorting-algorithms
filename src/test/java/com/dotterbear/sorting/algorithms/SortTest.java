@@ -60,7 +60,7 @@ public class SortTest {
 
     @Test
     public void TimSortTest() {
-        Sort sort = new TimSort();
+        Sort sort = new Timsort();
         int[] nums = new int[] { 5, 9, 6, 2, 1, 4 };
         int[] sorted = sort.sort(nums.clone());
         Arrays.sort(nums);
