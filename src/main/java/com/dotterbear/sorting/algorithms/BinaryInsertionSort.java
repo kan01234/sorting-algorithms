@@ -4,7 +4,12 @@ public class BinaryInsertionSort implements Sort {
 
     @Override
     public int[] sort(int[] nums) {
-        for (int i = 1; i < nums.length; i++) {
+        binaryInsertionSort(nums, nums.length);
+        return nums;
+    }
+
+    public void binaryInsertionSort(int[] nums, int length) {
+        for (int i = 1; i < length; i++) {
             int j = i - 1;
             int cur = nums[i];
             int loc = binarySearch(nums, cur, 0, j);            
@@ -14,7 +19,6 @@ public class BinaryInsertionSort implements Sort {
             }
             nums[j+1] = cur;
         }
-        return nums;
     }
 
     public int binarySearch(int nums[], int item, int low, int high) {
