@@ -10,3 +10,5 @@ sorting alogrithms implement by Java.
 [Insertion Sort](https://github.com/kan01234/sorting-algorithms/blob/master/md/insertion-sort.md)
 
 [Binary Insertion Sort](https://github.com/kan01234/sorting-algorithms/blob/master/md/binary-insertion-sort.md)
+
+[Timsort](https://github.com/kan01234/sorting-algorithms/blob/master/md/timsort.md)
